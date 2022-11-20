@@ -1,0 +1,52 @@
+.enter-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #99aab5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 70px;
+}
+
+.enter-text-container .input-container {
+  background: #99aab5;
+  border: 1px solid white;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 3em;
+  background-color: white;
+}
+
+.enter-text-container .input-container * {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.enter-text-container .input-container .input-message {
+  border: none;
+}
+
+.enter-text-container .input-container .input-message:focus {
+  outline: none;
+}
+
+.enter-text-container .button-send-message {
+  border: none;
+  background-color: white;
+}
+
+.enter-text-container .button-send-message:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=AddMessageForm.css.map */

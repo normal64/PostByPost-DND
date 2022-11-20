@@ -1,0 +1,33 @@
+.enter-text-container {
+  display: flex;
+  justify-content: center;
+  background-color: #99aab5;
+  align-items: center;
+  min-height: 70px;
+  .input-container {
+    background:#99aab5;
+    border: 1px solid white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    min-height: 3em;
+    background-color: white;
+    *{
+        align-self: center;
+    }
+    .input-message{
+      border: none;
+    }
+    .input-message:focus{
+      outline: none;
+     
+    }
+  }
+  .button-send-message{
+    border: none;
+    background-color: white;
+  }
+  .button-send-message:hover{
+    cursor: pointer;
+  }
+}

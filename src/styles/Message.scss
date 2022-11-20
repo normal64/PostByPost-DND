@@ -1,0 +1,31 @@
+.message-container{
+    
+    .user-info{
+        padding-top: 0.5em;
+        padding-left: 0.5em;
+        display: flex;
+    align-items: center;
+    b{
+        padding-left: 0.3em;
+    }
+    
+    }
+    .message-text-container{
+        display: flex;
+        align-items: center;
+        background: #ffffffd9;
+    max-width: 75%;
+    min-height: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    .p-container-message{
+        padding: 0 0.6em 0 0.6em;
+    }
+    }
+   img{
+       width: 50px;
+       height: 50px;
+       border-radius: 25px;
+   }
+}

@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/PostByPost-DND/static/css/main.49b6d1ba.css",
+    "main.js": "/PostByPost-DND/static/js/main.0b287413.js",
+    "index.html": "/PostByPost-DND/index.html",
+    "main.49b6d1ba.css.map": "/PostByPost-DND/static/css/main.49b6d1ba.css.map",
+    "main.0b287413.js.map": "/PostByPost-DND/static/js/main.0b287413.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49b6d1ba.css",
+    "static/js/main.0b287413.js"
+  ]
+}

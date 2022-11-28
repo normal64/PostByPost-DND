@@ -81,21 +81,38 @@ const Message = ({ message }) => {
   );
 };
 const AddMessageForm = () => {
-  const [message, setMessage] = useState("")
+  const [message, setMessage] = useState("");
   const openInNewTab = (url) => {
+    const headers = {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "POST,PATCH,OPTIONS",
+    };
+    const response = {
+      statusCode: 200,
+      headers: {
+        "Access-Control-Allow-Headers": "Content-Type",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "OPTIONS,POST,GET",
+      },
+      body: JSON.stringify("Hello from Lambda!"),
+    };
     fetch(url + message)
       .then((response) => response.json())
       .then((data) => console.log(data))
       .catch((err) => console.error(err));
-    // window.open(url + "junioer bleat", "_blank", "noopener,noreferrer");
+    return response;
   };
-  function onInputChange(){
 
-  }
   return (
     <div className="enter-text-container">
       <div className="input-container">
-        <input className="input-message" type="text" value={message} onChange={(e) =>setMessage(e.target.value)}/>
+        <input
+          className="input-message"
+          type="text"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+        />
 
         <button
           className="button-send-message"
